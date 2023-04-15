@@ -1,4 +1,5 @@
 # Codebrew Backend API
+## To start: npm run start
 ## External API:
 1. Spoonacular API (Search recipe): https://spoonacular.com/food-api/docs
 2. FoodDataCentral API (Nutrients recipe): https://fdc.nal.usda.gov/ 
