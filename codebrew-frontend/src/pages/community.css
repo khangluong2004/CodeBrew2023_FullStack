@@ -1,0 +1,87 @@
+.community-page {
+    width: 100vw;
+    min-height: 100vh;
+
+    padding: 0 10%;
+}
+
+.community-pages {
+    margin-bottom: 2rem;
+
+}
+
+.community-pages > button+button {
+    margin-left: 1rem;
+}
+
+.posts-modal {
+    padding: 2rem 3rem;
+}
+
+.posts-modal-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.posts-textinput {
+    width: 100%;
+    min-height: 40vh;
+}
+
+.posts-modal-action {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.posts-modal-action > button+button {
+    margin-left: 1rem;
+}
+
+.posts-posts {
+    margin: 2rem 0;
+}
+
+.posts-posts > div+div {
+    margin-top: 2rem;
+}
+
+.post-card:nth-child(1) {
+    background-color: rgba(147, 197, 114, 0.15);
+}
+
+.post-card:nth-child(2) {
+    background-color: rgba(147, 197, 114, 0.30);
+}
+
+.post-card:nth-child(3) {
+    background-color: rgba(147, 197, 114, 0.45);
+}
+
+.post-card:nth-child(4) {
+    background-color: rgba(147, 197, 114, 0.50);
+}
+
+.post-card {
+    background-color: rgba(147, 197, 114, 0.55);
+}
+
+
+.community-recipes {
+
+}
+
+.community-recipes-action {
+    margin-bottom: 2rem;
+}
+
+.community-recipes-list {
+    display: grid;
+    gap: 2rem 4rem;
+    grid-template-columns: auto auto auto;
+}
+
+.community-recipes-list-details {
+    display: flex;
+    justify-content: space-between;
+}
+

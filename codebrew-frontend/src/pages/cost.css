@@ -1,0 +1,213 @@
+.cost-page {
+    width: 100vw;
+    min-height: 100vh;
+
+    padding: 0 10%;
+}
+
+.cost-title {
+    margin: 2rem 0 2rem;
+}
+
+.cost-box {
+    /*overflow: auto;*/
+    background: radial-gradient(
+            50% 50% at 50% 50%,
+            rgba(147, 197, 114, 0.06) 0%,
+            rgba(147, 197, 114, 0.26) 100%
+    );
+
+    min-height: 500px;
+    border-radius: 40px;
+    padding-bottom: 0.25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cost-search {
+    position: relative;
+}
+
+.cost-ing {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 400px;
+    height: calc(100% + 20px);
+}
+
+.cost-search-others {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.cost-search-others > div:first-child {
+    margin-left: 400px;
+}
+
+.cost-search-entry {
+}
+
+.cost-search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cost-search-btn {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.cost-search-btn > svg {
+    margin-right: 0.5rem;
+
+}
+
+
+.cost-dropdown {
+    padding: 0.75rem 0;
+    margin-top: 20px;
+    width: 400px;
+    max-height: 200px;
+    /*min-height: 100px;*/
+
+    overflow-y: auto;
+}
+
+.cost-dropdown-entry {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cost-dropdown-entry > h3 {
+    font-size: 1rem;
+}
+
+.cost-dropdown-entry:hover {
+    background-color: rgba(236, 236, 236, 0.74);
+    cursor: pointer;
+}
+
+.cost-dropdown-entry--active,
+.cost-dropdown-entry:active {
+    background-color: rgb(236, 236, 236);
+}
+
+
+.cost-details {
+    margin: 1rem 0;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.cost-details-table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.cost-details-table > tbody > tr > td {
+    vertical-align: top;
+}
+
+.cost-details-entry {
+
+    /*display: flex;*/
+    /*justify-content: flex-start;*/
+    /*align-items: center;*/
+    /*margin: 0.75rem 0;*/
+}
+
+/*.cost-details-entry > *+* {*/
+/*    margin-left: 1.5rem;*/
+/*}*/
+
+.details-delete-container {
+    width: 32px;
+}
+
+.details-delete {
+    cursor: pointer;
+}
+
+.details-title {
+    width: calc(50% - 32px);
+}
+
+.details-price {
+    width: 10%;
+}
+
+.details-nut {
+    width: 40%;
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+.details-nut-text {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.details-nut-dropdown {
+    padding: 0;
+    margin: 0;
+}
+
+.details-total {
+    border-top: 2px solid black;
+}
+
+.cost-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cost-actions > button {
+    min-width: 300px;
+    font-size: 1.25rem;
+}
+
+.cost-modal {
+    padding: 1rem 3rem;
+}
+
+.cost-modal-title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.cost-modal-instructions {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    width: 100%;
+    height: 40vh;
+    min-width: 100%;
+}
+
+.cost-modal-save {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cost-modal-save > button {
+    width: 200px;
+    margin-right: 1rem;
+}
+

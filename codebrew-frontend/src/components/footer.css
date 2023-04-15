@@ -1,0 +1,25 @@
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3.5rem 0 3rem;
+}
+
+.footer > * + * {
+    margin-top: 1rem;
+}
+
+.footer__socials > a + a {
+    margin-left: 4.5rem;
+}
+
+.footer__links {
+    font-weight: 700;
+    opacity: 0.58;
+}
+
+.footer__links > a + a {
+    margin-left: 3rem;
+}

@@ -1,0 +1,25 @@
+.post-content {
+    margin: 0;
+    min-height: 200px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.post-card {
+    padding: 1rem 2rem;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-user {
+    display: flex;
+    align-items: center;
+}
+
+.post-user > svg {
+    margin-right: 0.5rem;
+}

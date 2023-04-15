@@ -1,0 +1,194 @@
+
+
+.cb-link {
+    text-decoration: none;
+    color: black;
+}
+
+.cb-link:hover {
+    cursor: pointer;
+}
+
+.cb-link:active {
+    position: relative;
+    top: 0.1rem;
+}
+
+.cb-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.cb-button {
+    /*padding: 0.5rem 1rem;*/
+    background-color: white;
+    /*border: 2px solid black;*/
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.85rem;
+
+    border: 3px solid #41644A;
+    color: #41644A;
+    border-radius: 5px;
+
+    padding: 0.5rem 1rem;
+}
+
+.cb-button--outline {
+    background-color: #41644A;
+    color: white;
+}
+
+.cb-button--icon {
+    display: flex;
+}
+
+.cb-button--icon > svg {
+    margin-right: 0.5rem;
+}
+
+.cb-button:hover {
+    cursor: pointer;
+}
+
+.cb-button:active {
+    position: relative;
+    top: 1px;
+}
+
+.cb-button--outline:disabled {
+    background-color: #525252;
+}
+
+.cb-button--text {
+    font-weight: 600;
+    border: none;
+}
+
+.cb-button--text:hover {
+    background-color: rgba(65, 100, 74, 0.16);
+}
+
+.cb-big-title {
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin: 0;
+    color: #263A29;
+}
+
+.cb-page-title {
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin: 2rem 0 2rem;
+}
+
+.cb-big-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    color: #263A29;
+}
+
+
+.cb-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cb-form-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.cb-form-error {
+    color: red;
+}
+
+.cb-form div+div {
+    margin-top: 1rem;
+}
+
+.cb-form input {
+    border: 2px solid black;
+    border-radius: 25px;
+
+    padding: 0.3rem 1rem;
+
+    width: 400px;
+}
+
+.cb-form button {
+    padding: 0.5rem 0.75rem;
+    min-width: 200px;
+}
+
+.cb-form button:disabled {
+    background-color: #98a197;
+}
+
+
+.cb-fancy {
+    font-family: 'Courgette', cursive;
+    color: #41644A !important;
+    font-size: 1.25rem;
+}
+
+.cb-card {
+    background-color: white;
+    border: 3px solid #263A29;
+    border-radius: 40px;
+    padding: 1.5rem 2rem;
+}
+
+.cb-card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem;
+    text-transform: capitalize;
+}
+
+.cb-card-hline {
+    border-left: 2px solid #263A29;
+    margin-left: 1rem;
+    margin-right: calc(1rem + 2px);
+}
+
+
+.cb-input {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.cb-input--outline {
+    outline: blue;
+    border-radius: 15px;
+    background-color: white;
+    padding: 0.6rem 1rem;
+}
+
+.cb-textinput {
+    border: none;
+    background: none;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.cb-select {
+
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .cb-big-title {
+        font-size: 3.1rem;
+    }
+    .cb-big-subtitle {
+        font-size: 1.5rem;
+    }
+}

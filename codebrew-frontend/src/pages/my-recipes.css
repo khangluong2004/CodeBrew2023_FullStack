@@ -1,0 +1,17 @@
+.recipes-page {
+    width: 100vw;
+    min-height: 100vh;
+
+    padding: 0 10%;
+}
+
+
+.recipes-my {
+    display: grid;
+    gap: 2rem 4rem;
+    grid-template-columns: auto auto auto;
+}
+
+.recipes-my > div {
+    /*margin: 0 1rem 4rem;*/
+}

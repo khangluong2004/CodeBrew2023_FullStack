@@ -1,0 +1,13 @@
+.error-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    flex-grow: 1;
+    width: 100vw;
+}
+
+.error-page > div {
+    text-align: center;
+}

@@ -1,0 +1,48 @@
+
+
+.find-search {
+    width: 100%;
+    background-color: #93C572;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem 0;
+}
+
+.find-searchbar {
+    width: 50%;
+    margin-right: 2rem;
+}
+
+.find-page {
+    width: 100vw;
+    min-height: 100vh;
+
+    padding: 0 10%;
+}
+
+.find-filters {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+.find-filters > *+* {
+    margin-left: 1rem;
+}
+
+
+.find-recipes {
+    display: grid;
+    gap: 2rem 2rem;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 1rem;
+}
+
+
+.find-recipes-action {
+    display: flex;
+    justify-content: flex-end;
+}

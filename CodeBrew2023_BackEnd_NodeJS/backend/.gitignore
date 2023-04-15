@@ -1,0 +1,4 @@
+.production.env
+.env
+node_modules
+logs/

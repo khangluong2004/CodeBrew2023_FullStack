@@ -1,0 +1,41 @@
+.food-card {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.food-image {
+    position: relative;
+}
+
+
+.food-image::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.food-image > a > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 35px;
+}
+
+.food-title {
+    margin: 1rem 0 0;
+}
+
+.food-info {
+    margin: 0 0 1rem;
+    flex-grow: 1;
+}
+
+.food-info > span {
+    color: rgb(91, 91, 91);
+}
+
+.food-info > span+span {
+    margin-left: 0.5rem;
+}
