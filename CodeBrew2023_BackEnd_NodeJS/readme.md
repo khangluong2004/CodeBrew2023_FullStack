@@ -1,4 +1,6 @@
 # Codebrew Backend API
+## To start: npm run start
+## Need API keys, secret system key, mongodb uri, and other secret keys in .env file which is not published to work. Could setup one for yourself.
 ## External API:
 1. Spoonacular API (Search recipe): https://spoonacular.com/food-api/docs
 2. FoodDataCentral API (Nutrients recipe): https://fdc.nal.usda.gov/ 
