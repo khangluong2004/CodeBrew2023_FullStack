@@ -130,7 +130,7 @@ export default function Cost() {
             <td></td>
             <td>Total</td>
             <td>${totalPrice.toFixed(2)}</td>
-            <td>total nut value</td>
+            <td></td>
         </tr>
 
     }, [list]);
@@ -237,10 +237,11 @@ export default function Cost() {
         const CONF_DICT = {
             'kg': 1000,
             'l': 1000,
+            'ea': 100
         }
         let trueQuantity = quantity;
-        if (CONF_DICT[product.unit]) {
-            trueQuantity *= CONF_DICT[product.unit];
+        if (CONF_DICT[product.unit.toLowerCase()]) {
+            trueQuantity *= CONF_DICT[product.unit.toLowerCase()];
         }
 
         const body = {
