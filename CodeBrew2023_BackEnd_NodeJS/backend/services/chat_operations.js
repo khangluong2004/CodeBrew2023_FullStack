@@ -4,7 +4,7 @@ const {check_toxic} = require("../external_apis/perspective")
 
 const chat_post = async({username, post, likes}) => {
     const result = await check_toxic(post);
-    if (result > 0.6){
+    if (result > 0.5){
         return false;
     }
     
@@ -18,17 +18,17 @@ const chat_post = async({username, post, likes}) => {
     
 }
 
-const chat_recipe_post = async({username, name, ingredients, instructions, likes}) => {
+const chat_recipe_post = async({username, name, ingredients, instructions, likes, pricePerServing}) => {
     const result = await check_toxic(instructions);
-    if (result > 0.6){
+    if (result > 0.5){
         return false;
     }
     
-    const check = await getOne(chatRecipe, {username, name, ingredients, instructions});
+    const check = await getOne(chatRecipe, {username, name, ingredients, instructions, pricePerServing});
     if (!check){
-        await create(chatRecipe, {username, name, ingredients, instructions, likes})
+        await create(chatRecipe, {username, name, ingredients, instructions, likes, pricePerServing})
     } else {
-        await updateEntry(chatRecipe, {username, name, ingredients, instructions}, {username, name, ingredients, instructions, likes});
+        await updateEntry(chatRecipe, {username, name, ingredients, instructions, pricePerServing}, {username, name, ingredients, instructions, likes, pricePerServing});
     }
     return true; 
 }

@@ -125,12 +125,11 @@ export default function Cost() {
             return <></>;
 
         const totalPrice = list.map(product => product.price).reduce((x, acc) => x + acc, 0);
-
         return <tr className="details-total">
             <td></td>
             <td>Total</td>
             <td>${totalPrice.toFixed(2)}</td>
-            <td></td>
+            <td>total nut value</td>
         </tr>
 
     }, [list]);
@@ -237,11 +236,10 @@ export default function Cost() {
         const CONF_DICT = {
             'kg': 1000,
             'l': 1000,
-            'ea': 100
         }
         let trueQuantity = quantity;
-        if (CONF_DICT[product.unit.toLowerCase()]) {
-            trueQuantity *= CONF_DICT[product.unit.toLowerCase()];
+        if (CONF_DICT[product.unit]) {
+            trueQuantity *= CONF_DICT[product.unit];
         }
 
         const body = {
@@ -337,6 +335,7 @@ export default function Cost() {
         // save
         try {
 
+            const totalPrice = list.map(l => l.price).reduce((x, acc) => x + acc, 0);
             await authPost(
                 '/recipe/add_normal',
                 {
@@ -344,6 +343,7 @@ export default function Cost() {
                     ingredients: list.map(l => l.name),
                     instructions: recipeInstr,
                     name: recipeName,
+                    pricePerServing: totalPrice
                 }
             );
 

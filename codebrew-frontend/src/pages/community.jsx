@@ -162,7 +162,7 @@ function Recipes() {
                 ingredients: res.ingredients,
                 instructions: res.instructions,
                 likes: res.likes,
-                cost: null,
+                cost: res.pricePerServing,
             })));
         } catch (err) {
             console.log('failed to retrieve the recipes');

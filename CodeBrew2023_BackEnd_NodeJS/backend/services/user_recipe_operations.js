@@ -1,13 +1,26 @@
-const {getOne, updateEntry} = require("../repositories/index");
+const {getOne, updateEntry, create} = require("../repositories/index");
 const  {userRecipes} = require("../model/index");
 
-const recipe_add_normal = async({username, name, ingredients, instructions}) => {
+const recipe_add_normal = async({username, name, ingredients, instructions, pricePerServing}) => {
     try {
         let entry = await getOne(userRecipes, {username});
+        if (!entry){
+            await create(userRecipes, {
+                username: username,
+                normal: [{
+                    name: name,
+                    ingredients,
+                    instructions,
+                    pricePerServing
+                }],
+                online: []
+            })
+        }
         entry.normal.unshift({
             name,
             ingredients,
-            instructions
+            instructions,
+            pricePerServing
         });
         const updated = await updateEntry(userRecipes, {username}, entry);
         console.log(updated);
@@ -20,6 +33,19 @@ const recipe_add_normal = async({username, name, ingredients, instructions}) => 
 const recipe_add_online = async({username, name, image, sourceUrl, summary, pricePerServing}) => {
     try {
         let entry = await getOne(userRecipes, {username});
+        if (!entry){
+            await create(userRecipes, {
+                username: username,
+                normal: [],
+                online: [{
+                    name,
+                    image,
+                    sourceUrl,
+                    summary,
+                    pricePerServing
+                }]
+            })
+        }
         entry.online.unshift({
             image,
             name,
@@ -37,6 +63,12 @@ const recipe_add_online = async({username, name, image, sourceUrl, summary, pric
 
 const recipe_retrieve = async({username}) => {
     const entry = await getOne(userRecipes, {username});
+    if (!entry){
+        return({
+            online: [],
+            normal: []
+        });
+    }
     console.log({
         online: entry.online,
         normal: entry.normal

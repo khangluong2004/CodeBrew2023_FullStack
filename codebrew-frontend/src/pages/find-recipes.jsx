@@ -182,6 +182,7 @@ export default function FindRecipes() {
                                 cost={rec.price}
                                 nv={rec.summary}
                                 url={rec.image}
+                                source={rec.source}
                                 name={rec.name}>
                                 <div className="find-recipes-action">
                                     <button className="cb-button cb-button--outline"

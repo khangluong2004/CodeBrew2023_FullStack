@@ -13,7 +13,8 @@ const ChatRecipeSchema = new mongoose.Schema({
     instructions: {
         type: String
     },
-    likes: Number
+    likes: Number,
+    pricePerServing: Number
 })
 
 

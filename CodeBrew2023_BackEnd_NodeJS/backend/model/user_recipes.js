@@ -14,7 +14,8 @@ const RecipeSchema = new mongoose.Schema({
         }],
         instructions: {
             type: String
-        }
+        },
+        pricePerServing: Number
     }],
     online: [{
         name: String,
