@@ -1,6 +1,7 @@
 # Codebrew 2023 - Team CodeBruh: Frugalicious
 ## Our project - Frugalicious Website:
 ### DevPost link: https://devpost.com/software/frugalicious
+
 ## Inspiration
 We know many people especially uni students are on a budget. We know sometimes we eat unhealthy fast food just to save money.
 
