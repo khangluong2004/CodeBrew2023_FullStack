@@ -47,15 +47,15 @@ npm run start
 
 ## Further team's info:
 ## How we built it:
-For UI and UX (Diana & Cindy): Figma.
+- For UI and UX (Diana & Cindy): Figma.
 
-For Front-end (Terry): ReactJS (Vite).
+- For Front-end (Terry): ReactJS (Vite).
 
-For Backend (Khang): NodeJS with Express, MongoDB Atlas for our database (API details in backend folder).
+- For Backend (Khang): NodeJS with Express, MongoDB Atlas for our database (API details in backend folder).
 
-Hosting (Terry): Vercel (React) + Trying to find VM for the server
+- Hosting (Terry): Vercel (React) + Trying to find VM for the server
 
-Business Pitch and Presentation (Jonathan).
+- Business Pitch and Presentation (Jonathan).
 
 ## Challenges we ran into
 We are a group of first-year students and some of our team members don’t have any experience in creating a website.
